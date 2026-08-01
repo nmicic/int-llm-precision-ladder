@@ -171,5 +171,6 @@ source identities and the exact validation boundary.
 ## References
 
 - [`int-llm` source repository](https://github.com/nmicic/int-llm)
+- [`int-llm-coordinate-permutation`: reversible model-layout experiments across vocabulary, neurons, attention heads, and hidden coordinates](https://github.com/nmicic/int-llm-coordinate-permutation)
 - [Published `int-llm` model and `model.mgw` artifact](https://huggingface.co/nmicic/int-llm)
 - [Original article: *int-llm: a pure-integer LLM experiment in C*](https://huggingface.co/blog/nmicic/int-llm)
