@@ -1,0 +1,13 @@
+gpt_int_infer_trace
+llama_mgwi
+mgw_round
+gpu_real_weight_math_test
+gpu_p13_int16_math_test
+safetensors_conversion_test
+__pycache__/
+*.pyc
+*.log
+*.candidate.mgw
+.DS_Store
+.pio/
+archive/

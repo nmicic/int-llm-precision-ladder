@@ -1,0 +1,91 @@
+{
+  "conversion": {
+    "config_sha256": "486bedda3a6988332e60d9638a09ca4b260d34ebcf1b19e22cf3b140b63d8fe9",
+    "lm_head_tied": 0,
+    "num_elements": 1100048384,
+    "num_tensors": 201,
+    "output_bytes": 2200116192,
+    "output_sha256": "fa733f5afdec220a91fbaae17ce00bcc20685f25afadd3eec92cfde0af1192c7",
+    "ranges": {
+      "11": [
+        47,
+        131164160,
+        -1192,
+        6528
+      ],
+      "12": [
+        154,
+        968884224,
+        -12736,
+        4832
+      ]
+    },
+    "source_bytes": 2200119864,
+    "source_sha256": "6e6001da2106d4757498752a021df6c2bdc332c650aae4bae6b0c004dcf14933"
+  },
+  "full_file_comparison": {
+    "byte_identical": true,
+    "bytes_compared": 2200116192,
+    "direct_sha256": "fa733f5afdec220a91fbaae17ce00bcc20685f25afadd3eec92cfde0af1192c7",
+    "retained_sha256": "fa733f5afdec220a91fbaae17ce00bcc20685f25afadd3eec92cfde0af1192c7"
+  },
+  "host_class": {
+    "machine": "x86_64",
+    "numpy": "1.26.4",
+    "python": "3.12.3",
+    "system": "Linux"
+  },
+  "inputs": {
+    "config_json": {
+      "bytes": 608,
+      "sha256": "486bedda3a6988332e60d9638a09ca4b260d34ebcf1b19e22cf3b140b63d8fe9"
+    },
+    "retained_mgwi": {
+      "bytes": 2200116192,
+      "sha256": "fa733f5afdec220a91fbaae17ce00bcc20685f25afadd3eec92cfde0af1192c7"
+    },
+    "rounded_wide_mgw": {
+      "bytes": 8800406496,
+      "sha256": "7ec8e1fd6442c8ad467603460a8cadd3c7d45b3e8fdde94c0cf8b8408fad4b45"
+    },
+    "source_safetensors": {
+      "bytes": 2200119864,
+      "sha256": "6e6001da2106d4757498752a021df6c2bdc332c650aae4bae6b0c004dcf14933"
+    }
+  },
+  "plan": {
+    "default_fraction_bits": 11,
+    "physical_storage": "little-endian signed int16",
+    "rules": {
+      "model.layers.*.mlp.*_proj.weight": 12,
+      "model.layers.*.self_attn.*_proj.weight": 12
+    }
+  },
+  "schema": "direct_safetensors_mgwi_gate_v1",
+  "status": "PASS",
+  "timestamp_utc": "2026-07-31T21:40:51.853128+00:00",
+  "timing_seconds": {
+    "conversion": 91.53183803986758,
+    "full_byte_comparison": 2.0546733997762203,
+    "total": 101.08822176605463,
+    "unpacked_element_comparison": 7.50171032641083
+  },
+  "tools": {
+    "converter_sha256": "61b6447d10b99e36e0f083b13bc5817abfaa45005abf092160bfdd688738ec1f",
+    "gate_sha256": "6723e8b6534c3c78dcad64e4275a0222e0bd1c99df2b133535df202a5a32d2b2"
+  },
+  "unpacked_comparison": {
+    "F11": {
+      "elements": 131164160,
+      "tensors": 47
+    },
+    "F12": {
+      "elements": 968884224,
+      "tensors": 154
+    },
+    "elements_compared": 1100048384,
+    "packed_sha256": "fa733f5afdec220a91fbaae17ce00bcc20685f25afadd3eec92cfde0af1192c7",
+    "rounded_wide_sha256": "7ec8e1fd6442c8ad467603460a8cadd3c7d45b3e8fdde94c0cf8b8408fad4b45",
+    "unpacked_byte_identical": true
+  }
+}

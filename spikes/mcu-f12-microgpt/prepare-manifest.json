@@ -1,0 +1,44 @@
+{
+  "corrupt": {
+    "bytes": 29944,
+    "element": 832,
+    "new_code": 58,
+    "old_code": 57,
+    "sha256": "2058ea8e2383bbf795306ebeb2bde80c903945b837269446d6adb0591bd9c6a4",
+    "tensor": "wte"
+  },
+  "host_transcript_sha256": "10dc40aae5c3bfd83fd959888c321fbc23e0ce853a088b092153fff65d70810f",
+  "lanes": {
+    "corrupt": {
+      "logits_hash": 12757635650821199302,
+      "sample_hash": 1111020054865736027,
+      "steps": 122
+    },
+    "packed": {
+      "logits_hash": 437120945119926731,
+      "sample_hash": 1111020054865736027,
+      "steps": 122
+    },
+    "wide": {
+      "logits_hash": 437120945119926731,
+      "sample_hash": 1111020054865736027,
+      "steps": 122
+    }
+  },
+  "packed": {
+    "bytes": 29944,
+    "sha256": "6f2e5e2e97840e65a4c9edc0a70f48cede5e02f15bd2a0dbe8285b5d9bf81e51"
+  },
+  "payload_saving_bytes": 85632,
+  "schema": "microgpt_f12_full_prepare_v3",
+  "source": {
+    "fp_math.h": "21d6952213c1afcd1ad22e9b7a630cfdc619d10f7497978d00a2a9a0d9d95735",
+    "host_main.c": "6bab8bd2544d31b41891f150e6a308e3fc2d9fdd9d8bc6092b1ec7bf752d8d7e",
+    "mgwi_pack.py": "1ca1c8260c9e78ef8326ca6f4d37e634182edf3a57cb1ccd832fb362f39a298e",
+    "microgpt_int.c": "b25fc25ec2c7f0f6fd9511412f53d46473cc6a89e26d14af4d32b9ba8a0021d4"
+  },
+  "wide": {
+    "bytes": 115576,
+    "sha256": "742cbd6d0b750bf3d164a23d97390171e3fe545ee9d87a2b0e843d3d8d1ae9f4"
+  }
+}

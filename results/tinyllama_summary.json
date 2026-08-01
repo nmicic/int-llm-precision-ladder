@@ -1,0 +1,115 @@
+{
+  "schema": "tinyllama_precision_summary_v2",
+  "dates": [
+    "2026-07-30",
+    "2026-07-31"
+  ],
+  "source_commit": "1b80e024c5fadea955e3892578a36dbc80a8a0b5f",
+  "primary_host": {
+    "cpu": "AMD Ryzen 7 7700",
+    "gpu_used": false,
+    "os": "Linux x86-64",
+    "ram_gib": 61
+  },
+  "exact_mgw": {
+    "bytes": 8800406496,
+    "elements": 1100048384,
+    "sha256": "7e8218d7f79a784f9d1868140fb16c3b9f5fbc45c19fb5c807ddcba5b41e32a8",
+    "tensors": 201
+  },
+  "rounded_mgw": {
+    "bytes": 8800406496,
+    "f11": {
+      "elements": 131164160,
+      "tensors": 47
+    },
+    "f12": {
+      "elements": 968884224,
+      "tensors": 154
+    },
+    "plan": {
+      "default_fraction_bits": 11,
+      "rules": {
+        "model.layers.*.mlp.*_proj.weight": 12,
+        "model.layers.*.self_attn.*_proj.weight": 12
+      }
+    },
+    "sha256": "7ec8e1fd6442c8ad467603460a8cadd3c7d45b3e8fdde94c0cf8b8408fad4b45"
+  },
+  "source_safetensors": {
+    "bytes": 2200119864,
+    "sha256": "6e6001da2106d4757498752a021df6c2bdc332c650aae4bae6b0c004dcf14933"
+  },
+  "mgwi": {
+    "bytes": 2200116192,
+    "container_bits": 16,
+    "direct_equals_reference_bytes": 2200116192,
+    "direct_equals_reference_codes": 1100048384,
+    "physical_storage": "little-endian signed int16",
+    "sha256": "fa733f5afdec220a91fbaae17ce00bcc20685f25afadd3eec92cfde0af1192c7",
+    "unpacked_byte_identical": true,
+    "unpacked_sha256": "7ec8e1fd6442c8ad467603460a8cadd3c7d45b3e8fdde94c0cf8b8408fad4b45"
+  },
+  "validation": {
+    "combined_decisions": {
+      "early_eos_prompts": 5,
+      "evaluated": 632,
+      "matched": 632,
+      "maximum_requested": 640,
+      "prompts": 32
+    },
+    "confirmation": {
+      "evaluated": 392,
+      "matched": 392,
+      "prompts": 20
+    },
+    "development": {
+      "evaluated": 160,
+      "matched": 160,
+      "prompts": 8
+    },
+    "four_prompt_gate": {
+      "evaluated": 80,
+      "matched": 80,
+      "prompts": 4
+    },
+    "raw_logits": {
+      "algorithm": "FNV-1a-64 over canonical little-endian int64 values",
+      "direct_int16_equals_rounded_int64": true,
+      "hash": "2a32782dc6e68e12",
+      "values": 3264000,
+      "vectors": 102
+    }
+  },
+  "amd_packed_vs_rounded_wide": {
+    "packed": {
+      "generation_median_seconds": 37.6339,
+      "peak_rss_median_bytes": 2261084160
+    },
+    "rounded_wide": {
+      "generation_median_seconds": 49.0083,
+      "peak_rss_median_bytes": 8469436416
+    },
+    "time_reduction_percent": 23.209,
+    "peak_rss_reduction_percent": 73.303,
+    "scope": "one-host representation-plus-execution comparison"
+  },
+  "amd_fp32_runtime_control": {
+    "fp32": {
+      "generation_median_seconds": 11.9678,
+      "peak_rss_median_bytes": 7306727424
+    },
+    "packed": {
+      "generation_median_seconds": 37.9248,
+      "peak_rss_median_bytes": 2261082112
+    },
+    "packed_over_fp32_time_ratio": 3.168899,
+    "packed_over_fp32_rss_ratio": 0.309452,
+    "scope": "different complete runtime stacks; not arithmetic-only"
+  },
+  "ideal_exact_widths": {
+    "signed_int8_possible_without_more_rounding": false,
+    "total_bytes": 1678072544,
+    "widest_signed_bits": 15
+  }
+}
